@@ -1,21 +1,16 @@
 <template>
   <header class="header">
     <nav id="nav" class="nav">
-      <!-- eslint-disable-next-line prettier/prettier -->
       <Logo/>
       <div id="toggle-menu" class="toggle-menu">
         <label for="toggle-menu_checkbox">
-          <!-- eslint-disable-next-line prettier/prettier -->
           <img src="https://cdn.icon-icons.com/icons2/903/PNG/512/menu_icon-icons.com_69502.png" alt="icono menu">
         </label>
       </div>
     </nav>
-    <!-- eslint-disable-next-line prettier/prettier -->
     <input type="checkbox" class="toggle-menu_checkbox" id="toggle-menu_checkbox">
     <ul class="nav-menu" id="nav-menu">
-      <!-- eslint-disable-next-line prettier/prettier -->
       <li class="nav-menu_item"><router-link to="/" class="nav-menu_link">Productos</router-link></li>
-      <!-- eslint-disable-next-line prettier/prettier -->
       <li class="nav-menu_item"><router-link to="/about" class="nav-menu_link">Sobre el trabajo</router-link></li>
     </ul>
   </header>
@@ -23,16 +18,12 @@
     <router-view />
   </main>
   <footer class="footer">
-    <!-- eslint-disable-next-line prettier/prettier -->
     <Logo/>
-    <!-- eslint-disable-next-line prettier/prettier -->
     <a href="https://github.com/AlexDeimon" class="link resaltado">❤️ Diego Sandoval</a>
   </footer>
 </template>
-
 <script>
 import Logo from "@/components/Logo.vue";
-
 export default {
   name: "App",
   components: {
@@ -40,7 +31,6 @@ export default {
   },
 };
 </script>
-
 <style>
 body {
   margin: 0;

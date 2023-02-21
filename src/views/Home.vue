@@ -80,6 +80,7 @@
 <script>
 import axios from "axios";
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: "Home",
   data: function () {
     return {
@@ -109,7 +110,7 @@ export default {
       var productos = this.productos;
       axios({
         method: "GET",
-        url: "https://project-ing-web-default-rtdb.firebaseio.com/productos.json",
+        url: "https://gamezone-e-comemerce-default-rtdb.firebaseio.com/productos.json",
       })
         .then((response) => {
           this.productos_list = response.data;
@@ -124,7 +125,7 @@ export default {
       var producto = this.producto;
       axios({
         method: "PUT",
-        url: `https://project-ing-web-default-rtdb.firebaseio.com/productos/${producto.producto}.json`,
+        url: `https://gamezone-e-comemerce-default-rtdb.firebaseio.com/productos/${producto.producto}.json`,
         data: {
           producto: producto.producto,
           precio: producto.precio,
@@ -149,7 +150,7 @@ export default {
       var producto_update = this.producto_update;
       axios({
         method: "GET",
-        url: `https://project-ing-web-default-rtdb.firebaseio.com/productos/${producto_update.producto}.json`,
+        url: `https://gamezone-e-comemerce-default-rtdb.firebaseio.com/productos/${producto_update.producto}.json`,
       })
         .then((response) => {
           this.producto_update = response.data;
@@ -166,7 +167,7 @@ export default {
       var producto_update = this.producto_update;
       axios({
         method: "PATCH",
-        url: `https://project-ing-web-default-rtdb.firebaseio.com/productos/${producto_update.producto}.json`,
+        url: `https://gamezone-e-comemerce-default-rtdb.firebaseio.com/productos/${producto_update.producto}.json`,
         data: {
           precio: producto_update.precio,
           stock: producto_update.stock,
@@ -189,7 +190,7 @@ export default {
       var producto_delete = this.producto_delete;
       axios({
         method: "DELETE",
-        url: `https://project-ing-web-default-rtdb.firebaseio.com/productos/${producto_delete.producto}.json`,
+        url: `https://gamezone-e-comemerce-default-rtdb.firebaseio.com/productos/${producto_delete.producto}.json`,
       })
         .then((response) => {
           this

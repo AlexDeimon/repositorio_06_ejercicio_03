@@ -1,5 +1,4 @@
 <template>
-<!-- eslint-disable -->
   <router-link to="/" class="link">
     <h1 class="titulo1"><span class="resaltado">Game</span> Zone <span class="resaltado">2.0</span></h1>
     <img src="https://i.imgur.com/mYxzx5S.jpg" alt="Gamezone img" class="img">
@@ -7,6 +6,7 @@
 </template>
 <script>
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: "Logo",
 };
 </script>

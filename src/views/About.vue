@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="about">
     <h1 class="titulo2">Segundo corte: Ejercicio 1</h1>
@@ -12,7 +13,6 @@
     <img src="../assets/Arquitectura.png" alt="modelo 3 capas" class="img2"><br>
   </div>
 </template>
-
 <style>
 ol {
   background-color: rgba(0, 0, 0, 0.664);
